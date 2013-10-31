@@ -9,7 +9,7 @@
 	</head>
 	
 	<body>
-        <h1>
+        <h1 style="color: blue; font-weight: bolder">
             <?php 
                 echo "Add Contacts"
             ?>
