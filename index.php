@@ -15,9 +15,9 @@
             ?>
         </h1>
 		<form action="/contacts/src/insertcontact.php" method="post">
-		First Name: <input type="text" name="first"><br>
+                First Name: <input type="text" name="first"><br>
 		Last Name: <input type="text" name="last"><br>
-		Home Phone: <input type="text" name="phone"><br>
+                Home Phone: <input type="text" name="phone"><br>
 		Mobile: <input type="text" name="mobile"><br>
 		Fax: <input type="text" name="fax"><br>
 		Email: <input type="text" name="email"><br>
