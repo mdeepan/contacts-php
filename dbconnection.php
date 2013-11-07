@@ -9,7 +9,7 @@
 		
 		// Define a method to connect to the DB and select a DB
 		public function dbConnect () {
-			$this->link = mysql_connect('10.21.13.149',$this->username,$this->password);
+			$this->link = mysql_connect('gsmaalap45.corp.lan',$this->username,$this->password);
 			if ($this->link) {
 				// Select the DB
 				mysql_select_db($this->database);
