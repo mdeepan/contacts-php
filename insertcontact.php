@@ -34,6 +34,6 @@
 	echo "<strong>Website: </strong>".$contactDetail['web']."<br><br>";
 	
 ?>
-<a href="http://127.0.0.1:8000/contacts/disp/addcontact.html">Back</a>
+<a href="http://10.21.13.149:8000/contacts/disp/addcontact.html">Back</a>
 </body>
 </html>
