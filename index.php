@@ -16,15 +16,15 @@
                 echo "Add Contacts"
             ?>
         </h1>
-		<form action="/contacts/src/insertcontact.php" method="post">
-                First Name: <input type="text" name="first"><br>
-		Last Name: <input type="text" name="last"><br>
-                Home Phone: <input type="text" name="phone"><br>
-		Mobile: <input type="text" name="mobile"><br>
-		Fax: <input type="text" name="fax"><br>
-		Email: <input type="text" name="email"><br>
-		Website: <input type="text" name="web"><br><br>
-		<input type="submit" value="Add Contact">
+		<form class="form-group" action="/contacts/src/insertcontact.php" method="post">
+                First Name: <input class="form-control" type="text" name="first"><br>
+		Last Name: <input class="form-control" type="text" name="last"><br>
+                Home Phone: <input class="form-control" type="text" name="phone"><br>
+		Mobile: <input class="form-control" type="text" name="mobile"><br>
+		Fax: <input class="form-control" type="text" name="fax"><br>
+		Email: <input class="form-control" type="text" name="email"><br>
+		Website: <input class="form-control" type="text" name="web"><br><br>
+		<input class="btn" type="submit" value="Add Contact">
 		</form>
 		<br>
 		<a href="http://10.21.13.149:8000/contacts/src/listcontact.php">List Contacts</a>
