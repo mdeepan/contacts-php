@@ -18,16 +18,20 @@
 ?>
 
 <table class="table">
-<tr>
-<th>ID</th>
-<th>First Name</th>
-<th>Last Name</th>
-<th>Home Phone</th>
-<th>Mobile</th>
-<th>Fax</th>
-<th>Email</th>
-<th>Website</th>
-</tr>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Home Phone</th>
+            <th>Mobile</th>
+            <th>Fax</th>
+            <th>Email</th>
+            <th>Website</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
 
 <?php	
 	// Loop through to output the result
@@ -40,18 +44,19 @@
 	$fax = mysql_result($selectResult,$i,"fax");
 	$email = mysql_result($selectResult,$i,"email");
 	$web = mysql_result($selectResult,$i,"web");
+        $deleteUrl = "http://10.21.13.149:8000/contacts/src/deletecontact.php?act=del&id=".$id;
 ?>
 
 <?php
 		if ($i == 0 || $i % 2 == 0) {
-			echo "<tr ><td>$id</td> <td>$first</td> <td>$last</td> <td>$phone</td> <td>$mobile</td> <td>$fax</td> <td>$email</td> <td>$web</td></tr>";
+			echo "<tr ><td>$id</td> <td>$first</td> <td>$last</td> <td>$phone</td> <td>$mobile</td> <td>$fax</td> <td>$email</td> <td>$web</td> <td class=\"btn-link\"><a href=\"$deleteUrl\">Delete</a></td></tr>";
 		} else {
-			echo "<tr ><td>$id</td> <td>$first</td> <td>$last</td> <td>$phone</td> <td>$mobile</td> <td>$fax</td> <td>$email</td> <td>$web</td></tr>";
+			echo "<tr ><td>$id</td> <td>$first</td> <td>$last</td> <td>$phone</td> <td>$mobile</td> <td>$fax</td> <td>$email</td> <td>$web</td> <td class=\"btn-link\"><a href=\"$deleteUrl\">Delete</a></td></tr>";
 		}
 	}
 	
 ?>
-
+    </tbody>
 </table>
 <br>
 <a href="http://10.21.13.149:8000/contacts/src/index.php">Back</a>
