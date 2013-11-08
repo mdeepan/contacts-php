@@ -2,6 +2,7 @@
 <head>
 	<title>List Contact</title>
         <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap-theme.css" />
 </head>
 <body>
 <h2>Contact List</h2>
@@ -43,9 +44,9 @@
 
 <?php
 		if ($i == 0 || $i % 2 == 0) {
-			echo "<tr style=\"background-color: orange\"><td>$id</td> <td>$first</td> <td>$last</td> <td>$phone</td> <td>$mobile</td> <td>$fax</td> <td>$email</td> <td>$web</td></tr>";
+			echo "<tr ><td>$id</td> <td>$first</td> <td>$last</td> <td>$phone</td> <td>$mobile</td> <td>$fax</td> <td>$email</td> <td>$web</td></tr>";
 		} else {
-			echo "<tr style=\"background-color: yellow\"><td>$id</td> <td>$first</td> <td>$last</td> <td>$phone</td> <td>$mobile</td> <td>$fax</td> <td>$email</td> <td>$web</td></tr>";
+			echo "<tr ><td>$id</td> <td>$first</td> <td>$last</td> <td>$phone</td> <td>$mobile</td> <td>$fax</td> <td>$email</td> <td>$web</td></tr>";
 		}
 	}
 	

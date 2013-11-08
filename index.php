@@ -7,6 +7,7 @@
 		Add Contact
 		</title>
             <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap.min.css" />
+            <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap-theme.css" />
 	</head>
 	
 	<body>
