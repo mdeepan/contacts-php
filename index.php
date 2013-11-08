@@ -24,7 +24,7 @@
 		Fax: <input class="form-control" type="text" name="fax"><br>
 		Email: <input class="form-control" type="text" name="email"><br>
 		Website: <input class="form-control" type="text" name="web"><br><br>
-		<input class="btn" type="submit" value="Add Contact">
+		<input class="btn-lg" type="submit" value="Add Contact">
 		</form>
 		<br>
 		<a href="http://10.21.13.149:8000/contacts/src/listcontact.php">List Contacts</a>
