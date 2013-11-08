@@ -11,7 +11,7 @@
 	</head>
 	
 	<body>
-        <h1 style="color: blue; font-weight: bolder">
+            <h1>
             <?php 
                 echo "Add Contacts"
             ?>
