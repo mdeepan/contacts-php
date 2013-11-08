@@ -17,7 +17,7 @@
 	$rowCount = mysql_numrows($selectResult);
 ?>
 
-<table class="table-bordered">
+<table class="table">
 <tr>
 <th>ID</th>
 <th>First Name</th>
