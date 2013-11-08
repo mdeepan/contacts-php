@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>List Contact</title>
+        <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap.min.css" />
 </head>
 <body>
 <h2>Contact List</h2>
