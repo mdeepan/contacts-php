@@ -69,5 +69,20 @@
 			// Return the results array
 			return $contactList;
 		}
+                
+                // Define a function to delete a contact row from the database
+                public function deleteContact($id) {
+                        // Define variables needed for the delete operation
+                        $contactId = $id;
+                        $deleteContact = "Delete from contacts where id = ".$contactId;
+                        
+                        // Create a connection object and perform the delete from DB
+			$newConnection = new dbConnection();
+			$newConnection->dbConnect();
+			mysql_query($deleteContact);
+                        
+                        // Close connection
+			$newConnection->dbClose();
+                }
 	}
 ?>
