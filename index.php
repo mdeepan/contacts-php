@@ -27,6 +27,6 @@
 		<input class="btn-lg" type="submit" value="Add Contact">
 		</form>
 		<br>
-		<a href="http://10.21.13.149:8000/contacts/src/listcontact.php">List Contacts</a>
+		<a href="/contacts/src/listcontact.php">List Contacts</a>
 	</body>
 </html>
