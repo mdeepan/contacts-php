@@ -14,6 +14,11 @@ $contactId = $_GET['id'];
 echo "Deleting contact id ".$contactId;
 
 // invoke a delete method in the class
-Contact::deleteContact($contactId);
+if (Contact::deleteContact($contactId)) {
+    // Redirect to the contact listing page
+    header('Location:/contacts/src/listcontact.php');
+} else {
+    echo "<br/><span style=\"font-family: Garamond; color: red\">"."An error occured"."</span>";
+}
 
-echo "Contact id ".$contactId." deleted";
+// echo "Contact id ".$contactId." deleted";
