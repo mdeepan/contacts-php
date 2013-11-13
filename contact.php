@@ -79,7 +79,11 @@
                         // Create a connection object and perform the delete from DB
 			$newConnection = new dbConnection();
 			$newConnection->dbConnect();
-			mysql_query($deleteContact);
+                        if(mysql_query($deleteContact)) {
+                            return 1;
+                        } else {
+                            return 0;
+                        };
                         
                         // Close connection
 			$newConnection->dbClose();
