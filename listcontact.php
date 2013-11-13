@@ -44,7 +44,7 @@
 	$fax = mysql_result($selectResult,$i,"fax");
 	$email = mysql_result($selectResult,$i,"email");
 	$web = mysql_result($selectResult,$i,"web");
-        $deleteUrl = "http://10.21.13.149:8000/contacts/src/deletecontact.php?act=del&id=".$id;
+        $deleteUrl = "/contacts/src/deletecontact.php?act=del&id=".$id;
 ?>
 
 <?php
@@ -59,6 +59,6 @@
     </tbody>
 </table>
 <br>
-<a href="http://10.21.13.149:8000/contacts/src/index.php">Back</a>
+<a href="/contacts/src/index.php">Back</a>
 </body>
 </html>
